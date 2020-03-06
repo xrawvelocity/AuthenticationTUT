@@ -152,7 +152,7 @@ app.get("/submit", (req,res)=>{
     }
 })
 
-app.post("/submit", (req,res=>{
+app.post("/submit", (req,res)=>{
     const submittedSecret = req.body.secret
 
     User.findById(req.user.id, (err,foundUser)=>{
