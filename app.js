@@ -167,7 +167,7 @@ app.post("/submit", (req,res)=>{
             }
         }
     })
-}))
+})
 
 app.get("/logout", (req,res)=>{
     req.logout()
